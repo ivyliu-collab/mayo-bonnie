@@ -60,7 +60,7 @@ The original v0 visual language and page structure are preserved. The remaining 
 
 ## Cloudflare deployment
 
-This is a dynamic Next.js application: it uses server components, server actions, cookies, and Supabase SSR. Deploy it with a Cloudflare Next.js runtime such as OpenNext for Cloudflare/Workers, not as a plain static export. Configure the same two `NEXT_PUBLIC_SUPABASE_*` variables in Cloudflare and add the deployed `/auth/callback` URL in Supabase Auth.
+This is a dynamic Next.js application: it uses server components, server actions, cookies, and Supabase SSR. The repository includes `open-next.config.ts` and `wrangler.jsonc` for the Cloudflare OpenNext Workers runtime; deploy it as a Worker, not as a plain static export. Configure the same two `NEXT_PUBLIC_SUPABASE_*` variables in Cloudflare and add the deployed `/auth/callback` URL in Supabase Auth.
 
 ## Verification
 
